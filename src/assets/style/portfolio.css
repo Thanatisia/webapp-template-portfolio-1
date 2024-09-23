@@ -1,0 +1,70 @@
+/*
+ * Stylesheet containing design ID and class for a Portfolio Website Template
+ */
+
+/* Portfolio-specific classes */
+.portfolio-containers {
+    /*
+     * Design for each portfolio containers (i.e. divs)
+     */
+    border-style: solid; /* Set the border edge display style */
+    border-width: thick; /* Set the border's width size */
+    border-color: var(--black);
+    background-color: var(--penn-blue);
+    color: var(--cerulean);
+    display: block;
+    font-size: 17px; /* Set font size to 17px */
+    padding: 14px 16px; /* Add 14px padding to the width and 16px padding to the height */
+    text-decoration: none;
+}
+
+.portfolio-project-entries {
+    /*
+     * Design for each portfolio project entries
+     */
+    border-style: solid; /* Set the border edge display style */
+    border-width: thick; /* Set the border's width size */
+    border-color: var(--black);
+    background-color: var(--penn-blue);
+    color: var(--cerulean);
+    display: block;
+    font-size: 17px; /* Set font size to 17px */
+    padding: 14px 16px; /* Add 14px padding to the width and 16px padding to the height */
+    text-decoration: none;
+}
+
+/* Customize the footer */
+.footer {
+    /*
+     * Design the base configuration for the footer
+     */
+    background-color: var(--cerulean);
+    overflow: hidden;
+}
+
+/* Style the links inside the footer */
+.footer a {
+    /*
+     * Style the anchor/link within the class
+     */
+    float: left; /* The link will float/hover leaning towards the left */
+    display: block; /* Generate a block */
+    color: black; /* Set font color to #F2F2F2 */
+    font-size: 15px; /* Set font size to 17px */
+    text-align: center; /* Center the text */
+    padding: 14px 16px; /* Add 14px padding to the width and 16px padding to the height */
+    text-decoration: none;
+}
+
+.footer a:hover {
+    /*
+     * Set the specifications when the mouse is hovering over the link in the footer
+     */
+    float: left; /* The link will float/hover leaning towards the left */
+    display: block; /* Generate a block */
+    color: var(--penn-blue); /* Set font color to var(--penn-blue) when hovering */
+    font-size: 17px; /* Set font size to 17px; The font will increase by 2 pixels when hovering */
+    text-align: center; /* Center the text */
+    padding: 14px 16px; /* Add 14px padding to the width and 16px padding to the height */
+}
+

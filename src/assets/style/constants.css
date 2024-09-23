@@ -1,0 +1,21 @@
+/*
+ * Reusable constant style sheet variables and definitions for importing
+ */
+
+:root {
+	/*
+	 * Define custom properties on the ':root' pseudo-class
+	 */
+    --black: #000000;
+  	--blue: #1e90ff;
+    --lime-green: #04AA6D;
+    --light-grey: #ddd;
+    --grey: #333;
+  	--white: #ffffff;
+    --white-smoke: #f2f2f2;
+	--oxford-blue: #0A1128;
+	--penn-blue: #001F54;
+	--indigo-dye: #034078;
+	--cerulean: #1282A2;
+}
+

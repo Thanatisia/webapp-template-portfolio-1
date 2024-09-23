@@ -1,0 +1,281 @@
+/*
+ * CSS Stylesheet for index.html
+ */
+
+/* Import external CSS dependencies/libraries */
+@import './constants.css';
+@import './designs.css';
+
+/* Tags */
+body {
+    background-color: var(--cerulean);
+}
+
+/*
+ * ID ('#') 
+ */
+
+#portfolio-header {
+    background-color: var(--cerulean);
+}
+
+#portfolio-body { /* ... */ }
+
+#portfolio-projects {
+    /*
+     * Portfolio projects
+     * - Expand the div's border to be visible
+     */
+    border: 5px thick black; /* Set the border to be 5px thick and black */
+    width: 40%;
+}
+
+/*
+ * class ('.')
+ */
+
+/* Portfolio-specific classes */
+.portfolio-containers {
+    /*
+     * Design for each portfolio containers (i.e. divs)
+     */
+    border-style: solid; /* Set the border edge display style */
+    border-width: thick; /* Set the border's width size */
+    border-color: var(--black);
+    background-color: var(--penn-blue);
+    color: var(--cerulean);
+    display: block;
+    font-size: 17px; /* Set font size to 17px */
+    padding: 14px 16px; /* Add 14px padding to the width and 16px padding to the height */
+    text-decoration: none;
+}
+
+.portfolio-project-entries {
+    /*
+     * Design for each portfolio project entries
+     */
+    background-color: var(--penn-blue);
+    color: var(--cerulean);
+    display: block;
+    font-size: 17px; /* Set font size to 17px */
+    padding: 14px 16px; /* Add 14px padding to the width and 16px padding to the height */
+    text-decoration: none;
+
+	/* Customize Border */
+    border-style: solid; /* Set the border edge display style */
+    border-width: thick; /* Set the border's width size */
+    border-color: var(--black);
+
+	/* Add a rounded edge to each container */
+    border-radius: 50px; /* Add a curve around the edges of the border */
+    overflow: hidden;
+}
+
+/* Customize the top navigation bar */
+.top-navbar {
+    /*background-color: #333;*/
+    background-color: var(--penn-blue);
+    overflow: hidden;
+    border-radius: 50px;
+	border-style: solid; /* Add a border around the component/object/widget */
+}
+
+/* Style the links inside the top navigation bar */
+.top-navbar a {
+    /*
+     * Style the anchor/link
+     */
+    float: left; /* The link will float/hover leaning towards the left */
+    display: block; /* Generate a block */
+    color: var(--white-smoke); /* Set font color to #F2F2F2 */
+    font-size: 17px; /* Set font size to 17px */
+    text-align: center; /* Center the text */
+    padding: 14px 16px; /* Add 14px padding to the width and 16px padding to the height */
+    text-decoration: none;
+}
+
+.top-navbar a:hover {
+    /*
+     * When mouse is hovering over the links in the top navigation bar
+     */
+    background-color: var(--light-grey);
+    color: black;
+}
+
+.top-navbar a.active {
+    /*
+     * Customize the style of the currently-active object/widget (active class)
+     * - Highlight the current page
+     */
+    background-color: var(--lime-green); /* Set the background color of the selected page to '#04AA6D' */
+    color: white; /* Set the font color of the selected page to white */
+}
+
+.top-navbar .icon {
+    /*
+     * Hide the link that should open and close the top navigation bar on small screens
+     */
+    display: none;
+}
+
+/* Customize the footer */
+.footer {
+    /*
+     * Design the base configuration for the footer
+     */
+    background-color: var(--cerulean);
+    overflow: hidden;
+}
+
+/* Style the links inside the footer */
+.footer a {
+    /*
+     * Style the anchor/link within the class
+     */
+    float: left; /* The link will float/hover leaning towards the left */
+    display: block; /* Generate a block */
+    color: black; /* Set font color to #F2F2F2 */
+    font-size: 15px; /* Set font size to 17px */
+    text-align: center; /* Center the text */
+    padding: 14px 16px; /* Add 14px padding to the width and 16px padding to the height */
+    text-decoration: none;
+}
+
+.footer a:hover {
+    /*
+     * Set the specifications when the mouse is hovering over the link in the footer
+     */
+    float: left; /* The link will float/hover leaning towards the left */
+    display: block; /* Generate a block */
+    color: var(--penn-blue); /* Set font color to var(--penn-blue) when hovering */
+    font-size: 17px; /* Set font size to 17px; The font will increase by 2 pixels when hovering */
+    text-align: center; /* Center the text */
+    padding: 14px 16px; /* Add 14px padding to the width and 16px padding to the height */
+}
+
+/*
+ * Components/Container/Widget classes
+ */
+.arrange-horizontal {
+    /*
+     * Position each portfolio project entry containers/widgets side by side in a table
+     */
+    overflow: hidden;
+    /*
+    display: table;
+    float: left;
+    */
+}
+
+.max-width-half {
+    /*
+     * Set the maximum width (horizontal length) of the container/widget to half screen
+     */
+    width: 50%;
+}
+
+.max-width-fill {
+    /*
+     * Set the maximum width (horizontal length) of the container/widget to the length of the screen
+     */
+    width: 100%;
+}
+
+.sticky {
+	/*
+	 * Set the container/object to be sticky (stuck to the top even after scrolling)
+	 */
+	overflow: hidden;
+    position: sticky;
+    top: 0;
+}
+
+/* Define configurations for containers and data boxes */
+.container {
+	/*
+	 * Design the master flexbox container
+	 */
+	display: flex; /* Enable flexbox */
+	justify-content: space-around; /* Align items with space around them */
+	align-items: center; /* Center items vertically */
+	flex-wrap: wrap; /* Allow items to wrap to the next line if overflow */
+}
+
+.box {
+	/*
+	 * Design each box (rows/entries within a flexbox container) defined within the flexbox container
+	 */
+	padding: 20px; /* Add a 20px padding space inside/between the box(es) */
+	margin: 10px; /* Add a 10px margin space around the box */
+    flex: 1 1 200px; /* Allow boxes to grow and shrink, with a base size of 200px */
+    text-align: center; /* Center text inside the box */
+    border-radius: 5px; /* Rounded corners */
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2); /* Shadow effect */
+}
+
+/*
+ * Font/Text string Designs
+ */
+.font-family-monospace {
+    /*
+     * Set the font family to monospace
+     */
+    font-family: monospace;
+}
+
+.font-bold {
+    /*
+     * Add a border around the text to make the word "popup"
+     */
+    font-weight: bold;
+}
+
+.text-position-center {
+    /*
+     * Position the text at the center
+     */
+    text-align: center;
+}
+
+.text-position-left {
+    /*
+     * Position the text to the left
+     */
+    text-align: left;
+}
+
+.text-position-right {
+    /*
+     * Position the text to the right
+     */
+    text-align: right;
+}
+
+/*
+ * Media Queries for Reactive/Responsive Web Development 
+ */
+/* When the screen is less than 600 pixels wide, hide all links, except for the first one ("Home"). Show the link that contains should open and close the topnav (.icon) */
+@media screen and (max-width: 600px) {
+  .top-nav a:not(:first-child) {display: none;}
+  .top-nav a.icon {
+    float: right;
+    display: block;
+  }
+}
+
+/* The "responsive" class is added to the topnav with JavaScript when the user clicks on the icon. This class makes the topnav look good on small screens (display the links vertically instead of horizontally) */
+@media screen and (max-width: 600px) {
+  .top-nav.responsive {position: relative;}
+  .top-nav.responsive a.icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .top-nav.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+}
+
+

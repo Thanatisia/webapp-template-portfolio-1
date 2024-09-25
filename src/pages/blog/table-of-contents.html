@@ -1,18 +1,62 @@
+<!DOCTYPE html>
 <!--
 Table of Contents page
 -->
-
 <html>
     <head>
         <title>Portfolio Blog - Table of Contents (ToC)</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1"> <!-- Define website metadata to set the website's width (horizontal length) to the widget of the device -->
+        <script defer src="../../assets/lib/index.js" type="text/javascript" alt="javascript"></script> <!-- Defer the loading to after the DOM is done loading before running the script -->
+        <link href="../../assets/style/index.css" type="text/css" rel="stylesheet" /> <!-- Import external CSS file -->
     </head>
 
-    <body id="portfolio-blog-toc">
-        <p>Blog Entries</p>
-        <ul class="portfolio-blog">
-            <p>2024-09-21</p>
-            <!-- Each entry is the blog post time (<li>HH-MM-SS.html)</li> -->
-            <li id="2024-09-21-1606H"><a href="posts/2024-09-21/1606H.html">1606H</a></li>
-        </ul>
-    <body>
+    <body class="font-family-monospace">
+        <!--
+            Body Header
+        -->
+        <div id="portfolio-Navbar" class="font-bold top-navbar sticky">
+            <!-- Navigation Bar -->
+            <a href="../../index.html">Home</a>
+            <a href="../about-me.html">About Me</a>
+            <a href="../../index.html#portfolio-projects">Projects</a>
+            <a href="../../index.html#portfolio-contacts">Contacts</a>
+            <a href="table-of-contents.html" class="active">Blog Posts</a>
+        </div>
+
+        <br/>
+
+        <!--
+            Body
+        -->
+        <div id="portfolio-body" class="font-bold">
+            <div id="portfolio-blog-toc">
+                <!--
+                    Blog Table of Contents
+                -->
+                <h2 class="text-position-center">Blog Entries</h2>
+
+                <div class="portfolio-containers visible-text">
+                    <ul class="portfolio-blog">
+                        <p>2024-09-21</p>
+                        <!-- Each entry is the blog post time (<li>HH-MM-SS.html)</li> -->
+                        <li id="2024-09-21-1606H"><a href="posts/2024-09-21/1606H.html">1606H : Initial Post</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </body>
+
+    <hr/>
+
+    <!--
+        Footer
+    -->
+    <footer id="portfolio-footer" class="font-bold">
+        <div class="footer">
+            <a href="https://github.com/your-username"><h3>GitHub</h3></a>
+            <a href="#"><h3>LinkedIn</h3></a>
+        </div>
+        <h6 style="text-align: right;";>Made in pure HTML5 CSS3 Javascript</h6>
+    </footer>
 </html>
+

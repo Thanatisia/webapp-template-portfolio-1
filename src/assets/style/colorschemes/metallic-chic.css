@@ -1,0 +1,14 @@
+/*
+ * Stylesheet for the colorscheme 'Metallic Chic'
+ */
+
+/* Define colorscheme variables */
+:root {
+    --bg1: #3D52A0:
+    --bg2: #7091E6;
+    --bg3: #8697C4;
+    --bg4: #ADBBDA;
+    --bg5: #EDE8F5;
+}
+
+

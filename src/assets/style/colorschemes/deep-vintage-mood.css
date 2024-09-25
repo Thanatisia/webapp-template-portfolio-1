@@ -1,0 +1,13 @@
+/*
+ * Stylesheet for the colorscheme 'Deep Vintage Mood'
+ */
+
+/* Define colorscheme variables */
+:root {
+    --bg1: #244855:
+    --bg2: #E64833;
+    --bg3: #874F41;
+    --bg4: #90AEAD;
+    --bg5: #FBE9D0;
+}
+

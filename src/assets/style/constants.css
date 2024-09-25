@@ -2,20 +2,59 @@
  * Reusable constant style sheet variables and definitions for importing
  */
 
+/*
+ * Default group containing color hexadecimal codes
+ */
 :root {
 	/*
 	 * Define custom properties on the ':root' pseudo-class
 	 */
+
+    /* Color hexadecimal codes */
     --black: #000000;
+    --night: #000F08;
+    --rich-black: #0D1F2D;
   	--blue: #1e90ff;
-    --lime-green: #04AA6D;
-    --light-grey: #ddd;
-    --grey: #333;
-  	--white: #ffffff;
-    --white-smoke: #f2f2f2;
+    --deep-sky-blue: #2EC0F9;
+    --ruddy-blue: #67AAF9;
+    --true-blue: #4464AD;
+    --powder-blue: #A4B0F5;
+    --lapis-lazuli: #466995;
+    --egyptian-blue: #0A369D;
+    --celtic-blue: #4472CA;
+    --glaucous: #5E7CE2;
+    --space-cadet: #2E294E;
+    --jordy-blue: #92B4F4;
+    --columbia-blue: #CFDEE7;
 	--oxford-blue: #0A1128;
 	--penn-blue: #001F54;
 	--indigo-dye: #034078;
 	--cerulean: #1282A2;
+    --celadon-green: #9CDE9F;
+    --olivine-green: #9DB17C;
+    --tea-green: #D1F5BE;
+    --viridian-green: #4C8577;
+    --lime-green: #04AA6D;
+    --aquamarine: #52FFB8;
+    --tiffany-blue: #A6ECE0;
+    --light-grey: #ddd;
+    --grey: #333;
+    --white-smoke: #f2f2f2;
+  	--white: #ffffff;
+    --jasper: #DD614A;
+    --coral: #F48668;
+    --melon: #F4A698;
+    --sunset: #FFCF9C;
+    --sage: #C5C392;
+    --cambridge-blue: #74A580;
+    --dark-cyan: #548687;
+    --cafe-noir: #563F1B;
 }
+
+/*
+ * Custom Palettes
+:root {
+    --var-name: #hex-value;
+}
+*/
 

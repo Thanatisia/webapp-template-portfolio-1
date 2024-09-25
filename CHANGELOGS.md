@@ -85,4 +85,8 @@
         + Formatted to be the table of contents
         + Generalized 'GitHub' footer link
 
+#### 2105H
+- Updates
+    - Updated document 'index.css' in 'src/assets/style/'
+        + Added new class 'component-align-side'
 

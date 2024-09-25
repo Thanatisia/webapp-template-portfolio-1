@@ -245,6 +245,16 @@ body {
 	overflow: hidden;
 }
 
+.component-align-side {
+    /*
+     * Align components in a form next to another component (i.e. label next to input (textbox))
+     */
+    display: flex;
+    flex-wrap: wrap;
+    flex: 1 1 200px; /* Allow boxes to grow and shrink, with a base size of 200px */
+    text-align: right;
+}
+
 /*
  * Font/Text string Designs
  */

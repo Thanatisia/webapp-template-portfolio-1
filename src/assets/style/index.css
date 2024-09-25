@@ -71,6 +71,27 @@ body {
     overflow: hidden;
 }
 
+/* Profile-specific classes */
+.profile-container {
+	/*
+	 * Style properties/attributes for the profile container box containing the profile picture and description
+	 */
+	display: flex; /* Enable flexbox arrangement */
+	background: white; /* Set background color to white */
+	border-radius: 8px; /* Add rounded corners to the edges of the container */
+	box-shadow: 0 2px 10px rgba(0,0,0,0.1); /* Add a slight shadow around the flex box */
+	overflow: hidden; /* Hide all overflowing texts */
+	max-width: 600px; /* Set the maximum width of the container to 600px */
+}
+
+.profile-picture {
+	/*
+	 * Style properties/attributes for the profile picture
+	 */
+	width: 100px; /* Set the width (horizontal length) of the profile picture container to 100px - the same as the height to be a square*/
+	height: 100px; /* Set the height (vertical length) of the profile picture container to 100px - the same as the width to be a square */
+}
+
 /* Customize the top navigation bar */
 .top-navbar {
     /*background-color: #333;*/
@@ -160,11 +181,8 @@ body {
     /*
      * Position each portfolio project entry containers/widgets side by side in a table
      */
-    overflow: hidden;
-    /*
-    display: table;
     float: left;
-    */
+    display: block;
 }
 
 .max-width-half {
@@ -213,6 +231,20 @@ body {
     box-shadow: 0 2px 5px rgba(0,0,0,0.2); /* Shadow effect */
 }
 
+.container-square-100x100 {
+	/*
+	 * Style properties/attributes to create a square container of size 100x100
+	 */
+	width: 100px; /* Set the width (horizontal length) of the profile picture container to 100px - the same as the height to be a square*/
+	height: 100px; /* Set the height (vertical length) of the profile picture container to 100px - the same as the width to be a square */
+}
+
+/* Define attributes/properties for grouping multiple widgets/components/containers together */
+.group {
+	display: flex;
+	overflow: hidden;
+}
+
 /*
  * Font/Text string Designs
  */
@@ -249,6 +281,20 @@ body {
      * Position the text to the right
      */
     text-align: right;
+}
+
+.visible-text {
+	/*
+	 * Set the text to light gray for visible text
+	 */
+	color: var(--light-grey);
+}
+
+.underline {
+	/*
+	 * Underline the text
+	 */
+	text-decoration: underline;
 }
 
 /*

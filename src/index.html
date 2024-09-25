@@ -16,11 +16,11 @@
 
         <div id="portfolio-Navbar" class="font-bold top-navbar sticky">
             <!-- Navigation Bar -->
-            <a href="#home" class="active">Home</a>
-            <a href="#portfolio-about-me">About Me</a>
+            <a href="index.html" class="active">Home</a>
+            <a href="pages/about-me.html">About Me</a>
             <a href="#portfolio-projects">Projects</a>
             <a href="#portfolio-contacts">Contacts</a>
-            <a href="pages/blog/table-of-contents.html">Blog Posts</a>
+            <a href="pages/blog/table-of-contents.html">Blog Posts and Archives</a>
             <a href="javascript:void(0);" class="icon" onclick="myFunction()">
                 <i class="fa fa-bars"></i>
             </a>
@@ -33,14 +33,22 @@
         -->
         <div id="portfolio-body" class="font-bold">
 
-            <div id="portfolio-about-me">
+            <div id="portfolio-introduction">
                 <!--
-                    About Me
+                    About Me - Introduction
                 -->
-                <h2 class="text-position-center">About Me</h2>
+                <h2 class="text-position-center">Introduction</h2>
 
-                <div class="portfolio-containers">
-                    <p>WIP</p>
+                <div class="container">
+                    <!--
+                        Flex box for Profile Picture
+                    -->
+                    <div class="font-bold box portfolio-containers">
+                        <img src="" alt="Profile Picture Here" class="arrange-horizontal profile-container profile-picture"></img>
+                        <div class="visible-text" style="margin: 10px;">
+                            <p>Introduction Here</p>
+                        </div>
+                    </div>
                 </div>
             </div>
 
@@ -55,38 +63,74 @@
                 <br/>
 
                 <div class="container">
-                    <div id="portfolio-project-entry-1" class="portfolio-project-entries font-bold box max-width-half">
+                    <div id="portfolio-project-entry-1" class="portfolio-project-entries font-bold box max-width-half visible-text">
                         <!-- Set current portfolio project entry's attributes and definitions -->
+                        <a href="#" id="portfolio-project-entry-1-name" class="font-bold text-position-left">Project Name here</p></a>
                         <div class="container">
+                            <!--
+                                Flex box for Screenshots
+                            -->
                             <div class="font-bold box">
                                 <img id="portfolio-project-entry-1-screenshots">Screenshot prototype here</img>
                             </div>
 
-                            <div class="box" style="text-align: left; width: 50%;">
-                                <p id="portfolio-project-entry-1-name">Project Name here</p>
-                                <p id="portfolio-project-entry-1-url">Project URL here</p>
-                                <p id="portfolio-project-entry-1-description">Project Description here</p>
-                                <p id="portfolio-project-entry-1-tags">Project Tags here</p>
-                                <p id="portfolio-project-entry-1-category">Project Category here</p>
+                            <!--
+                                Flex box for description
+                            -->
+                            <div class="box text-position-left">
+                                <p class="text-position-center">Description</p>
+                                <p id="portfolio-project-entry-1-description" class="text-position-left">Project description here</p>
+                            </div>
+
+                            <!--
+                                Flex box for project metadata
+                            -->
+                            <div id="portfolio-project-entry-1-metadata" class="box text-position-left max-width-half">
+                                <div class="group">
+                                    <label class="arrange-horizontal" style="margin-bottom: 10px;">Category:</label>
+                                    <span id="portfolio-project-entry-1-category">Project Category here</span>
+                                </div>
+                                <div class="group">
+                                    <label class="arrange-horizontal">Tags:</label>
+                                    <span id="portfolio-project-entry-1-tags">Project Tags here (Separated with ';' delimiter)</span>
+                                </div>
                             </div>
                         </div>
                     </div>
 
                     <br/>
 
-                    <div id="portfolio-project-entry-2" class="portfolio-project-entries font-bold box max-width-half">
+                    <div id="portfolio-project-entry-2" class="portfolio-project-entries font-bold box max-width-half visible-text">
                         <!-- Set current portfolio project entry's attributes and definitions -->
+                        <p id="portfolio-project-entry-2-name" class="font-bold text-position-center">Project Name here</p>
                         <div class="container">
-                            <div id="portfolio-project-entry-2-screenshots" class="font-bold box">
+                            <div class="font-bold box">
                                 <img id="portfolio-project-entry-2-screenshots">Screenshot prototype here</img>
                             </div>
-
                             <div class="box" style="text-align: left; width: 50%;">
-                                <p id="portfolio-project-entry-2-name">Project Name here</p>
                                 <p id="portfolio-project-entry-2-url">Project URL here</p>
                                 <p id="portfolio-project-entry-2-description">Project Description here</p>
                                 <p id="portfolio-project-entry-2-tags">Project Tags here</p>
                                 <p id="portfolio-project-entry-2-category">Project Category here</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <br/>
+
+                    <div id="portfolio-project-entry-3" class="portfolio-project-entries font-bold box max-width-half visible-text">
+                        <!-- Set current portfolio project entry's attributes and definitions -->
+                        <div class="container">
+                            <div class="font-bold box">
+                                <p id="portfolio-project-entry-3-name">Project Name here</p>
+                            </div>
+
+                            <div class="box" style="text-align: left; width: 50%;">
+                                <p id="portfolio-project-entry-3-url">Project URL here</p>
+                                <p id="portfolio-project-entry-3-description">Project Description here</p>
+                                <p id="portfolio-project-entry-3-tags">Project Tags here</p>
+                                <p id="portfolio-project-entry-3-category">Project Category here</p>
+                                <img id="portfolio-project-entry-3-screenshots">Screenshot prototype here</img>
                             </div>
                         </div>
                     </div>
@@ -101,8 +145,15 @@
                 -->
                 <h2 class="text-position-center">Contacts</h2>
 
-                <div class="portfolio-containers">
-                    <p>WIP</p>
+                <div class="portfolio-containers visible-text">
+                    <div class="group arrange-horizontal">
+                        <label class="text-position-center">Email:</label>
+                        <span><a id="contact-email" class="arrange-horizontal" style="margin-right: 20px;" type="email" href="address@email.com">address@email.com</a></span>
+                    </div>
+                    <div class="group">
+                        <label class="text-position-center">LinkedIn:</label>
+                        <span><a id="contact-linkedin" style="margin-bottom: 10px;" type="email" href="#">Linkedin</a></span>
+                    </div>
                 </div>
             </div>
 
@@ -112,10 +163,12 @@
                 <!--
                     Blog page
                 -->
-                <h2 class="text-position-center">Blog Posts and Archives</h2>
+                <h2 class="text-position-center">Top 5 Newest Blog Posts and Archives</h2>
 
-                <div class="portfolio-containers">
-                    <p>WIP</p>
+                <div class="portfolio-containers visible-text">
+                    <ol>
+                        <li><a href="pages/blog/posts/2024-09-21/1606H.html">2024-09-21 1606H - Initial Commit</a></li>
+                    </ol>
                 </div>
             </div>
         </div>
@@ -128,7 +181,7 @@
     -->
     <footer id="portfolio-footer" class="font-bold">
         <div class="footer">
-            <a href="https://github.com/Thanatisia"><h3>GitHub - Thanatisia</h3></a>
+            <a href="https://github.com/your-username"><h3>GitHub</h3></a>
             <a href="#"><h3>LinkedIn</h3></a>
         </div>
         <h6 style="text-align: right;";>Made in pure HTML5 CSS3 Javascript</h6>
